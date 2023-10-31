@@ -69,11 +69,6 @@ footer {
 }
 
 /* Styles for security.html */
-.product-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 2rem;
-}
 
 .product-item {
     box-sizing: border-box;
