@@ -1,5 +1,4 @@
-/* Reset some default margins and padding */
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,7 +29,6 @@ nav ul li a {
     color: #FCA311;
     padding: 0.5rem 1rem;
     border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
@@ -79,15 +77,14 @@ footer {
 
 .product-item {
     box-sizing: border-box;
-    width: 23%; /* Adjusted to fit four items in a row */
+    width: 23%; 
     border: 1px solid #E5E5E5;
     padding: 1rem;
     border-radius: 8px;
-    transition: transform 0.3s;
 }
 
 .product-item img {
-    width: 100%; /* Ensures the image scales with the container */
+    width: 100%; 
     height: auto;
     display: block;
     margin: 0 auto 1rem;
@@ -125,8 +122,6 @@ input[type="submit"] {
     border: none;
     padding: 0.75rem;
     border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
 }
 
 input[type="submit"]:hover {
