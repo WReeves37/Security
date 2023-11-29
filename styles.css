@@ -1,0 +1,178 @@
+/* Styles for global use*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Set global color and background color for body */
+body {
+    background-color: #E5E5E5;      
+    color: #333333;
+}
+
+header, footer {
+    background-color: #14213D;
+    padding: 16px; 
+    color: #FCA311;
+    text-align: center;
+}
+
+/* Navigation position */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Color and look of nav bar */
+nav ul li a {
+    text-decoration: none;
+    color: #FCA311;
+    padding: 8px 16px; 
+    border-radius: 5px;
+}
+
+/* Hover effect for nav bar */
+nav ul li a:hover {
+    background-color: #FCA311;
+    color: #14213D;
+}
+
+main {
+    max-width: 800px;
+    margin: 32px auto; 
+    padding: 16px; 
+    background-color: #fff;
+    
+    border-radius: 8px;
+}
+
+main h1, main h2 {
+    margin-bottom: 16px; 
+    color: #14213D;
+}
+
+main p {
+    margin-bottom: 16px; 
+}
+
+section {
+    margin-bottom: 32px; 
+}
+
+/* Created the class .contact-section to put the image and link to contact form in the center */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer {
+    margin-top: 32px; 
+}
+
+/* Styles for security.html */
+
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+/* Created the border of the images */
+.product {
+    box-sizing: border-box;
+    width: 23%; 
+    border: 1px solid #E5E5E5;
+    padding: 16px; 
+    border-radius: 8px;
+}
+/* Set size of image */
+.product img {
+    width: 100%; 
+    height: auto;
+    display: block;
+    margin: 0 auto 16px; /
+}
+
+.product h3, .product p {
+    text-align: center;
+}
+img[id^="clickableImage"]:hover {
+    transform: scale(1.05); /* Slightly enlarges the image */
+    filter: brightness(90%); 
+    cursor: pointer; /* Change cursor to indicate it's clickable */
+}
+
+
+/* Styles for contact.html form */
+
+/* Sets form layout and position */
+form {                  
+    max-width: 600px; 
+    margin: 32px auto; 
+    display: flex;
+    flex-direction: column;
+    gap: 24px; 
+}
+
+
+label {
+    color: #14213D;
+    font-weight: 500;
+}
+
+input[type="text"], input[type="email"], textarea {
+    padding: 8px; 
+    border: 1px solid #E5E5E5;
+    border-radius: 5px;
+    font-size: 16px; 
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: #14213D;
+    color: #FCA311;
+    border: none;
+    padding: 12px; 
+    border-radius: 5px;
+}
+
+/* Sets the hover effect over the submit button */
+input[type="submit"]:hover {
+    background-color: #FCA311;
+    color: #14213D;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    
+}
+
+.modal-content {
+    display: flex; /* Use flexbox */
+    align-items: center; /* Align items vertically in the center */
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%; 
+    border-radius: 8px;
+}
+
+.modal-content img {
+    max-width: 50%; /* Limit image width */
+    margin-right: 20px; /* Space between image and text */
+}
+
